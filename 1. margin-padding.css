@@ -1,0 +1,30 @@
+
+div{
+    width: 1400px;
+    height: 400px;
+    margin: 100px auto 100px auto;
+    /*상(12) 우(3) 하(6) 좌(9)*/
+
+    margin: 50px 500px 50px;
+    /*상(12) 좌,우(3,9) 하(6)
+    수치값 - 상(50), 좌,우(500), 하(50)*/
+
+    margin: 200px auto;
+    /*상,하(200) 좌,우(auto)*/
+
+    margin: auto;
+    /*상,하,좌,우(auto)*/
+
+    margin-top: 100px;
+    margin-right: auto;
+    margin-bottom: 100px;
+    margin-left: auto;
+
+    padding: 40px;
+    /*margin과 표기법은 동일하나 auto값은 적용 안됨*/
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    border: 10px dotted rgb(255, 134, 134);
+}

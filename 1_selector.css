@@ -1,0 +1,94 @@
+
+/* .center{
+    text-align:center;
+}
+
+h2{
+    font-size:50px;
+}
+
+.box-1{
+    width:600px;
+    margin:100px auto;
+}
+
+.box-1 > div{
+    border: 1px solid #000;
+    padding:30px;
+}
+
+.box-1 > div > p{
+    margin:5px;
+    background-color: yellow;
+} */
+
+/*
+
+<내 메모>
+
+n번째 태그를 찾는 선택자 = 태그:nth-child(순번),태그:nth-of-type(순번)
+* nth-of-type의 경우 짝수(2n)(even)나 홀수(odd)를 찾을 수도 있음
+첫번째 태그를 찾는 선택자 = 태그:first-of-type
+마지막 태그를 찾는 선택자 = 태그:last-of-type
+
+*/
+
+/* .box-1 > div > p:first-of-type{
+    color:rgb(0, 255, 234);
+}
+.box-1 > div > p:nth-child(2){
+    color:#f00;
+}
+.box-1 > div > p:nth-of-type(3){
+    color:rgb(0, 255, 21);
+}
+.box-1 > div > p:nth-of-type(odd){
+    background-color: rgb(105, 105, 105);
+.box-1 > div > p:last-of-type{
+    color:rgb(195, 0, 255);
+} */
+
+/* 
+    nth-of-type
+    형제 태그들 중 n번째에 해당하는 태그요소를 선택자로 지정
+
+    [값]
+    홀수-(odd) / 짝수(even)
+    n번째에 해당하는 숫자
+    ex)
+        :nth-of-type(2){}
+        :nth-of-type(2n){} 형제태그들 순은 0부터 시작 x2
+*/
+
+.box-2{
+    width:600px;
+    margin:100px auto;
+}
+.box-2 > ul{}
+.box-2 > ul > li{
+    border-top: 1px dashed #000;
+    padding: 10px 0;
+}
+.box-2 > ul > li:nth-of-type(1){
+    font-size:16px;
+}
+.box-2 > ul > li:nth-of-type(2){
+    color:aquamarine;
+}
+.box-2 > ul > li:nth-of-type(3){
+    line-height: 200%; /*100%=1과 동일하며 보통 1.4정도가 디폴트값임*/
+}
+.box-2 > ul > li:nth-of-type(4){
+    letter-spacing: 20px;
+}
+.box-2 > ul > li:nth-of-type(5){
+    font-family:'Times New Roman', Times, serif;
+}
+.box-2 > ul > li:nth-of-type(6){
+    text-decoration: line-through;
+    /* underline(밑줄) line-through(취소선) overline(상단줄) none(라인없음) */
+}
+.box-2 > ul > li:nth-of-type(7){
+    text-transform: uppercase;
+    /* uppercase(대문자) lowercase(소문자) capitalize(첫 글자만 대문자) */
+}
