@@ -46,23 +46,24 @@ main aside a:nth-child(1)::after{
 }
 
 
-main .sub-visual{
+.sub-visual{
+    width: 100%; height: 100vh;
     overflow: hidden;
     position: relative;
 }
-main .content01 p img{
+.content01 p img{
     width: 100vw;
 }
-main .vdo video{
+.vdo video{
     position: absolute;
     left: 50%; bottom: 50%;
     transform: translate(-50%, 50%);
 }
-main .txt01{
+.txt01{
     position: absolute;
     top: 10%;
 }
-main .txt02{
+.txt02{
     position: absolute;
     bottom: 10%;
 }
@@ -70,7 +71,7 @@ main .txt02{
 
 /* section01 */
 .box01{
-    height: 100vh;
+    width:100%; height: 100vh;
     background-image: url(../img/bg_white.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -121,7 +122,7 @@ main .txt02{
 
 /* section02 */
 .box02{
-    height: 100vh;
+    width:100%; height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -170,3 +171,128 @@ main .txt02{
 .txt05 > b{font-size:30px; letter-spacing: -1px;}
 .txt05 > p{font-size:22px; letter-spacing: -1px; padding-top: 15px; padding-bottom: 15px;}
 .botton01 > a{font-size:20px; font-weight:bolder; color:black; letter-spacing: -1px;}
+
+
+/* section03 */
+.box03{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.content-box03{
+    width: 40vw;
+    position: absolute;
+    left:50%; bottom: 50%;
+    transform: translate(-50%, 50%)
+}
+.txt06{
+    text-align: center;
+}
+.txt06 img{
+    width: 45px; height: 45px;
+}
+.txt06 h3{
+    font-size: 22px;
+}
+.content04{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+.content04 img{
+    width: 180px; height: 180px;
+}
+.content04 figcaption{
+    padding-top: 20px;
+}
+.icon01{
+    width: 256px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #FEC6D7;
+}
+.icon02{
+    width: 256px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #FE9FBD;
+}
+.icon03{
+    width: 256px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #D9BCF6;
+}
+.bottom{
+    text-align: center;
+    width: 100vw; height: 239px;
+    background-color: #FFF0FB;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom > p{
+    font-size: 20px;
+    color: #686868;
+}
+
+
+/* section04 */
+.box04{
+    width: 100%; height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.box04 h1{
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.botton02{
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+}
+.botton02 > a{
+    width: 180px; height: 50px;
+    border: 1px solid #FA20AB;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    transition: 0.3s;
+}
+.botton02 a:hover{
+    color: white;
+    background-color: #FA20AB;
+    opacity: 1;
+}
+.botton02 > a{font-size:20px; font-weight:bolder; color:black; letter-spacing: -1px;}
+
+
+/*==================== footer ====================*/
+
+.top-footer{
+    padding: 10px 90px;
+    background-color: #F6F6F6;
+}
+.top-footer p{
+    color: #BBBBBB;
+}
+.bottom-footer{
+    display: flex;
+    padding: 50px 90px;
+    background-color: #ECECEC;
+}
+.bottom-footer p{
+    padding-right: 50px;
+    color: #BBBBBB;
+}

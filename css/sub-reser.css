@@ -1,0 +1,229 @@
+*{
+    padding:0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    vertical-align: middle;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*==================== header ====================*/
+header{
+    position: fixed;
+    left: 2.5vw;
+    width: 90vw;
+    padding: 20px;
+    margin: 0 auto;
+    z-index: 2;
+}
+header > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav a{
+    padding-right: 40px;
+    font-size: 20px;
+    color: #010030;
+    letter-spacing: -2px;
+}
+
+
+/*==================== main ====================*/
+.box01{
+    width: 80%; height: 1500px;
+    margin: 0 auto;
+    position: relative;
+}
+.content-box01{
+    width: 80%;
+    margin: 0 auto;
+}
+.fixed{
+    position: fixed;
+    padding-top: 100px;
+}
+.fixed h2{
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: -2px;
+}
+.fixed p{
+    font-size: 22px;
+    color: #686868;
+    letter-spacing: -2px;
+    padding-bottom: 30px;
+}
+.content02{
+    position: absolute;
+    right: 5%; top: 10%;
+    transform: translate(0, 0);
+}
+
+.box{display: flex;}
+.name-text p{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.name-text span{
+    border: 1px solid #FA20AB;
+    border-radius: 10px;
+    padding: 5px;
+    margin-right: 11px;
+}
+.name-text input{
+    width: 125px;
+    border: none;
+    outline: none;
+}
+
+
+.tel-text p{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.tel-text span{
+    border: 1px solid #FA20AB;
+    border-radius: 10px;
+    padding: 5px;
+}
+.tel-text input{
+    width: 244px;
+    border: none;
+    outline: none;
+}
+
+
+.store{margin-top: 10px;}
+.store label{
+    font-size: 30px;
+    font-weight: bold;
+}
+.store-choice{
+    width: 390px; height: 250px;
+    border: 1px solid #FA20AB;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.store-choice li a{
+    color: black;
+    font-size: 22px;
+}
+
+
+.service{margin-top: 10px;}
+.service label{
+    font-size: 30px;
+    font-weight: bold;
+}
+.service-choice li a{
+    color: black;
+    font-size: 22px;
+}
+.service-choice{
+    width: 390px; height: 195px;
+    border: 1px solid #FA20AB;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+
+.date-time-choice{
+    width:820px;
+    margin-top: 10px;
+    position: relative;
+}
+.date-time-choice p{
+    font-size: 30px;
+    font-weight: bold;
+}
+.date-choice{
+    width: 390px; height: 390px;
+    border: 1px solid #FA20AB;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 10px;
+}
+.date-choice label{
+    display: block;
+    width: 390px; height: 48px;
+    background-color: #FA20AB;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.time-choice{
+    position: absolute;
+    right:0; bottom:0;
+    width: 390px; height: 390px;
+    border: 1px solid #FA20AB;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 10px;
+}
+.time-choice label{
+    display: block;
+    width: 390px; height: 48px;
+    background-color: #FA20AB;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.time-choice li a{
+    color: black;
+    font-size: 22px;
+}
+
+
+.precautions{
+    margin: 10px 0;
+}
+.precautions label{
+    font-size: 30px;
+    font-weight: bold;
+}
+.pre-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 820px;
+    height: 60px;
+    margin-top: 10px;
+    border: 1px solid #FA20AB;
+    border-radius: 10px;
+}
+.precautions a{
+    color: black;
+    font-size: 22px;
+    text-align: center;
+}
+
+
+.text-box label{
+    font-size: 30px;
+    font-weight: bold;
+}
+.text-box textarea{
+    display: block;
+    resize: none;
+}
