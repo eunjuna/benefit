@@ -9,6 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link href="./css/index.css" rel="stylesheet">
+
+    <link href="./slide/slick.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="./slide/slick.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./slide/slide.js"> </script>
 </head>
 <body>
 
@@ -45,14 +50,14 @@
 
 <!--메인 비주얼-->
         <div class="visual">
-            <div class="visual-bg">
-                <!-- <p><img src="./img/m_bg_01.jpg" alt="스페셜오퍼"></p> -->
-                <p><img src="./img/m_bg_2-1.png" alt="베스트셀러"></p>
-                <!-- <p><img src="./img/m_bg_03.jpg" alt="신상품"></p> -->
+            <div class="slide">
+                <figure><img src="./img/m_bg_2-1.png" alt="베스트셀러"></figure>
+                <figure><img src="./img/m_bg_01.jpg" alt="스페셜오퍼"></figure>
+                <figure><img src="./img/m_bg_03.jpg" alt="신상품"></figure>
             </div>
 
 <!--메인 비주얼 인디게이터-->
-            <div class="visual-indi">
+            <!-- <div class="visual-indi">
                 <a href="#"><img src="./img/left.png"></a>
                 <ul>
                     <li><a href="#"></a></li>
@@ -61,20 +66,20 @@
                 </ul>
                 <a href="#"><img src="./img/right.png"></a>
             </div>
-        </div>
+        </div> -->
 
 <!--섹션01 베스트셀러-->
         <section>
             <a name="best"></a>
-            <h1></h1>
             <div class="box01">
+                <figure><img src="./img/best_bg.jpg" alt="베스트셀러"></figure>
                 <div class="content-box01">
                     <div class='text01'>
                         <h2>BEST ITEM</h2>
                         <p>꾸준히 사랑받는 베네피트의 베스트 아이템들을 만나보세요.</p>
                     </div>
 
-                    <div class="content01">
+                    <div class="slide2">
                         <figure>
                             <img src="./img/gimme_brow.png" alt="김미 브로우">
                             <figcaption>
@@ -96,15 +101,36 @@
                                 <p>늘어진 모공과 잔주름을<br>블러처리 한 듯 매끄럽게!</p>
                             </figcaption>
                         </figure>
+                        <figure>
+                            <img src="./img/brow_styler.png" alt="브로우 스타일러">
+                            <figcaption>
+                                <b>김미 브로우</b><br>
+                                <p>자연스러운 볼륨감으로<br>눈썹의 결을 살려주는 브로우</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="./img/love_tint (1).png" alt="러브틴트">
+                            <figcaption>
+                                <b>베네틴트</b><br>
+                                <p>부드럽게 스며들어<br>물드는 장미빛 로즈틴트</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="./img/concealer.png" alt="컨실러 ">
+                            <figcaption>
+                                <b>더 포어페셔널</b><br>
+                                <p>늘어진 모공과 잔주름을<br>블러처리 한 듯 매끄럽게!</p>
+                            </figcaption>
+                        </figure>
                     </div>
 
                     <!--콘텐츠 인디게이터-->
-                    <div class="content01-indi-l">
+                    <!-- <div class="content01-indi-l">
                         <a href="#"><img src="./img/left.png"></a>
                     </div>
                     <div class="content01-indi-r">
                         <a href="#"><img src="./img/right.png"></a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -112,9 +138,7 @@
 <!--섹션02 신상품-->
         <section>
             <a name="new"></a>
-            <h1></h1>
             <div class="box02">
-
                 <div class="content-box02">
                     <div class="content02">
                         <div class="text02">
@@ -124,7 +148,7 @@
                                 태연이 PICK한 바로 그 아이템! 지금바로 만나보세요.</p>
                                 
                                 <div class="botton01">
-                                    <a href="#">메이크업 예약</a>
+                                    <a href="sub-reser.html">메이크업 예약</a>
                                 </div>
                         </div>
 
@@ -162,7 +186,7 @@
                         <a href="sub-reser.html"><img src="./img/card_02.jpg" alt="예약바로가기"></a>
                         <a href="#"><img src="./img/card_03.jpg" alt="실시간상담"></a>
                         <a href="sub-faq.html"><img src="./img/card_04.jpg" alt="FAQ"></a>
-                        <a href="#"><img src="./img/card_05.jpg" alt="매장찾기"></a>
+                        <a href="./sub-special.html#store"><img src="./img/card_05.jpg" alt="매장찾기"></a>
                     </figure>
                 </div>
             </div>
@@ -181,11 +205,11 @@
                             </p>
                         </div>
                         <figure>
-                            <a href="#"><img src="./img/facebook.png" alt="페이스북"></a>
-                            <a href="#"><img src="./img/instagram.png" alt="인스타그램"></a>
-                            <a href="#"><img src="./img/twitter.png" alt="트위터"></a>
-                            <a href="#"><img src="./img/youtube.png" alt="유튜브"></a>
-                            <a href="#"><img src="./img/tiktok.png" alt="틱톡"></a>
+                            <a href="https://www.facebook.com/benefitkorea" target="_blank"><img src="./img/facebook.png" alt="페이스북"></a>
+                            <a href="https://www.instagram.com/benefitcosmeticskorea/" target="_blank"><img src="./img/instagram.png" alt="인스타그램"></a>
+                            <a href="https://twitter.com/BenefitUK" target="_blank"><img src="./img/twitter.png" alt="트위터"></a>
+                            <a href="https://www.youtube.com/channel/UC6UZGWUXphp86hYGCnkV7AQ" target="_blank"><img src="./img/youtube.png" alt="유튜브"></a>
+                            <a href="https://www.tiktok.com/@benefitcosmeticskorea" target="_blank"><img src="./img/tiktok.png" alt="틱톡"></a>
                         </figure>
                     </div>
             </div>
