@@ -224,6 +224,42 @@ header nav a{
     font-weight: bold;
 }
 .text-box textarea{
+    height: 150px;
     display: block;
     resize: none;
+    margin-top: 10px;
+    border: 1px solid #FA20AB;
+    border-radius: 10px;
 }
+
+.button01{
+    margin-top: 20px;
+}
+.button01 a{
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 190px; height: 60px;
+    border: 1px solid #FA20AB;
+    border-radius: 10px;
+}
+
+/*==================== footer ====================*/
+
+/* .top-footer{
+    padding: 10px 90px;
+    background-color: #F6F6F6;
+}
+.top-footer p{
+    color: #BBBBBB;
+}
+.bottom-footer{
+    display: flex;
+    padding: 50px 90px;
+    background-color: #ECECEC;
+}
+.bottom-footer p{
+    padding-right: 50px;
+    color: #BBBBBB;
+} */
