@@ -28,6 +28,9 @@ header nav a{
     color: #010030;
     letter-spacing: -2px;
 }
+header nav a:hover{
+    font-weight: bold;
+}
 
 
 /*==================== main ====================*/

@@ -111,14 +111,17 @@
                         
                         <div class="precautions">
                             <label>주의사항 확인여부</label>
-                            <div class="pre-text">
+                            <div class="popupbtn">
                                 <a href="#">(내용보기) 주의사항 <b>전문을 읽고 숙지하였음에 동의합니다.</b> </a>
                             </div>  
+                            <div class="popup">
+                                내용
+                            </div>
                         </div>
-                        <div class="text-box">
+                        <!-- <div class="text-box">
                             <label>기타 요청사항</label>
                             <textarea cols="115" row="10"></textarea>
-                        </div>
+                        </div> -->
                         <div class="button01">
                             <a href="#">예약신청</a>
                             <p>* 예약신청이 완료되면 예약일정 확인 후 확정연락을 문자 메세지로 보내드립니다.</p>
@@ -130,34 +133,47 @@
 
     </main>
 
-    <!--**푸터**-->
-    <!-- <footer>
-        <div>
-            <div class="top-footer">
-                <p>회사소개&ensp;이용약관&ensp;개인정보처리방침&ensp;
-                    베네피트코스메틱스코리아&ensp;유한회사고객센터&ensp;전화번호&nbsp;123-456-7890</p>
+        <!--**푸터**-->
+        <footer>
+            <div>
+                <div class="top-footer">
+                    <p>회사소개&ensp;이용약관&ensp;개인정보처리방침&ensp;
+                        베네피트코스메틱스코리아&ensp;유한회사고객센터&ensp;전화번호&nbsp;123-456-7890</p>
+                </div>
+                <div class="bottom-footer">
+                    <p>베네피트<br>
+                        사업자등록번호 123-45-67890 통신판매업신고번호 1234-5978-9012호<br>
+                        대표이사 홍길동 서울시 강남구 베네피트 사옥 1234<br>
+                        전화 1234-5678 이메일 bnft@bnft.com<br>
+                        서비스 제공 : benefit korea</p>
+                    <p>
+                        고객센터<br>
+                        서울시 강남구 베네피트 사옥 1234<br>
+                        전화 1234-5678<br>
+                        결제도용신고 8765-4321<br>
+                        1:1문의 서비스제공
+                    </p>
+                    <p>
+                        전자금융거래 분쟁처리<br>
+                        전화 9999-9999<br>
+                        1:1문의 서비스제공
+                    </p>
+                </div>
             </div>
-            <div class="bottom-footer">
-                <p>베네피트<br>
-                    사업자등록번호 123-45-67890 통신판매업신고번호 1234-5978-9012호<br>
-                    대표이사 홍길동 서울시 강남구 베네피트 사옥 1234<br>
-                    전화 1234-5678 이메일 bnft@bnft.com<br>
-                    서비스 제공 : benefit korea</p>
-                <p>
-                    고객센터<br>
-                    서울시 강남구 베네피트 사옥 1234<br>
-                    전화 1234-5678<br>
-                    결제도용신고 8765-4321<br>
-                    1:1문의 서비스제공
-                </p>
-                <p>
-                    전자금융거래 분쟁처리<br>
-                    전화 9999-9999<br>
-                    1:1문의 서비스제공
-                </p>
-            </div>
-        </div>
-    </footer> -->
+        </footer>
+
+    <script>
+        const elPopupbtn = document.querySelector('.popupbtn');
+        const elPopup = document.querySelector('.popup');
+
+        elPopupbtn = addEventListener('click',function(){
+            elPopup.classList.add('active');
+        })
+
+        elPopup = addEventListener('click',function(){
+            elPopup.classList.remove('active');
+        })
+    </script>
 
 </body>
 </html>

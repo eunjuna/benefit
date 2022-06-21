@@ -33,6 +33,10 @@ header nav a{
     color: #010030;
     letter-spacing: -2px;
 }
+header nav a:hover{
+    font-weight: bold;
+}
+
 /*==================== main ====================*/
 /* visual */
 main{
@@ -45,20 +49,23 @@ main aside{
     z-index: 3;
 }
 main aside a{
+    position: relative;
     width: 30px;
     display: block;
     padding-bottom: 25px;
     border-bottom: 1px solid #010030;
 }
 main aside a:nth-child(1)::after{
-    content: '';
+    content: url('/img/Heart.png');
+    position: absolute;
+    left: -45%; bottom: -50%;
 }
 
 
-/* main .visual{
+main .visual{
     position: relative;
 }
-main .visual-bg figure img{
+main .slide img{
     width: 100vw;
 }
 main .visual-indi{
@@ -79,14 +86,14 @@ main .visual-indi li{
 }
 main .visual-indi li:nth-child(2){
     background-color: #FA20AB;
-} */
+}
 
 /* section01 베스트셀러 */
 .box01{
     position: relative;
-    width: 100%;
+    width: 100vw; height: 100vh;
     background-size: cover;
-    /* background-image: url('../img/best_bg.jpg'); */
+    background-image: url('../img/best_bg.jpg');
     background-repeat: no-repeat;
     text-align: center;
 }
@@ -97,8 +104,7 @@ main .visual-indi li:nth-child(2){
     transform: translate(-50%, -50%);
 }
 .text01{
-    padding-top: 200px;
-    padding-bottom: 150px;
+    padding-bottom: 50px;
 }
 .slide2{
     display: flex;
@@ -120,20 +126,17 @@ main .visual-indi li:nth-child(2){
 .slide2 b{font-size: 30px; line-height: 50px; letter-spacing: -2px;}
 .slide2 p{font-size: 22px; color:#686868; letter-spacing: -1px;}
 
-/* .content01-indi-l{
+.content01-indi-l{
     position: absolute;
     left: 5%; bottom: 50%;
 }
 .content01-indi-r{
     position: absolute;
     right: 5%; bottom: 50%;
-} */
+}
 
 /* section02 신상품 */
 .box02{
-    position: relative;
-    background-size: cover;
-    background-image: url('../img/background.png');
     width:100vw; height: 100vh;
     display: flex;
     justify-content: space-around;
@@ -187,36 +190,55 @@ main .visual-indi li:nth-child(2){
 }
 
 /* section03 서비스 */
-.content-box03{
-    background-size: cover;
-    background-image: url('../img/background.png');
+.box03{
     width: 100vw; height: 100vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
+    overflow: hidden;
 }
 .content03{
+    width: 80%; height: 100%;
+    margin: 50px auto;
     position: relative;
-    transform: translate(5%, 0);
-    width: 80%;
 }
-
-
-.content03 figure a:nth-child(2){
+.content03 figure a{
+    display: flex;
+    position: absolute;
+    left: 50%; bottom: 50%;
+    transform: translate(-25%, 55%);
+}
+.content03 figure a:nth-child(1){
     position: absolute;
     left: 15%;
 }
-.content03 figure a:nth-child(3){
+.content03 figure a:nth-child(2){
     position: absolute;
     left: 30%;
 }
-.content03 figure a:nth-child(4){
+.content03 figure a:nth-child(3){
     position: absolute;
     left: 45%;
-}.content03 figure a:nth-child(5){
+}.content03 figure a:nth-child(4){
     position: absolute;
     left: 60%;
+}
+.content03 figure a:nth-child(5){
+    position: absolute;
+    left: 75%;
+}
+
+.content03 figure a:nth-child(1):hover{
+    z-index: 5;
+}
+.content03 figure a:nth-child(2):hover{
+    z-index: 5;
+}
+.content03 figure a:nth-child(3):hover{
+    z-index: 5;
+}
+.content03 figure a:nth-child(4):hover{
+    z-index: 5;
+}
+.content03 figure a:nth-child(5):hover{
+    z-index: 5;
 }
 
 .content03 figure img{
@@ -230,15 +252,13 @@ main .visual-indi li:nth-child(2){
     opacity: 1;
 }
 
+.text03{padding-top: 50px;}
 .text03 > h1{font-size: 40px; letter-spacing: -2px; text-align: center;}
 .text03 > p{font-size: 22px; color:#686868; letter-spacing: -1px; text-align: center;}
-
 /* section04 SNS */
 
 .box04{
-        background-size: cover;
-    background-image: url('../img/background.png');
-    width: 100vw; height: 100vh;
+    width: 100%; height: 100vh;
     background-image: url('../img/line.png');
     background-repeat: no-repeat;
     background-size: cover;

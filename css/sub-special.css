@@ -27,6 +27,9 @@ header nav a{
     color: #010030;
     letter-spacing: -2px;
 }
+header nav a:hover{
+    font-weight: bold;
+}
 
 /*==================== main ====================*/
 main aside{
@@ -59,10 +62,13 @@ main aside a:nth-child(1)::after{
     left: 50%; bottom: 50%;
     transform: translate(-50%, 50%);
 }
+
+
 .txt01{
     position: absolute;
     top: 10%;
 }
+
 .txt02{
     position: absolute;
     bottom: 10%;
