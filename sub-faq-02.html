@@ -59,37 +59,63 @@
                     </a>
                 </div>
 
-                    <table class="board">
-                        <tbody>
-                            <tr>
-                                <td>서비스</td>
-                                <td>브로우바 예약은 어떻게 하나요?</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    ‘스페셜 오퍼’ 메뉴나 오른쪽 상단 ‘예약 아이콘’을 통해 서비스를 예약하실 수 있습니다.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>서비스</td>
-                                <td>브로우바에서 메이크업 서비스도 같이 받아볼 수 있는지 궁금해요.</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">가능합니다. 온라인 예약시 서비스 선택 탭에서 ‘브로우바+메이크업’을 선택해주세요.</td>
-                            </tr>
-                            <tr>
-                                <td>서비스</td>
-                                <td>브로우바에서 사용한 제품을 구매하고싶어요.</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">‘고객 지원’ 메뉴에서 ‘매장찾기’를 통해 오프라인 매장에서 제품을 구매해보세요.</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <article class="board">
+                        <ul>
+
+                            <li>
+                                <p>
+                                    브로우바 예약은 어떻게 하나요?
+                                    <span class="btn">
+                                        <img src="./img/btn02.png">
+                                    </span>
+                                </p>
+                                <div>‘스페셜 오퍼’ 메뉴나 오른쪽 상단 ‘예약 아이콘’을 통해 서비스를 예약하실 수 있습니다.</div>
+                            </li>
+
+                            <li>
+                                <p>
+                                    브로우바에서 메이크업 서비스도 같이 받아볼 수 있는지 궁금해요.
+                                    <span class="btn">
+                                        <img src="./img/btn02.png">
+                                    </span>
+                                </p>
+                                <div>가능합니다. 온라인 예약시 서비스 선택 탭에서 ‘브로우바+메이크업’을 선택해주세요.</div>
+                            </li>
+
+                            <li>
+                                <p>
+                                    브로우바에서 사용한 제품을 구매하고싶어요.
+                                    <span class="btn">
+                                        <img src="./img/btn02.png">
+                                    </span>
+                                </p>
+                                <div>‘고객 지원’ 메뉴에서 ‘매장찾기’를 통해 오프라인 매장에서 제품을 구매해보세요.</div>
+                            </li>
+
+                        </ul>
+                    </article>
                 
             </div>
 
         </div>
+
+        <script>
+
+            const elEx2_li = document.querySelectorAll('.board ul li');
+            // li클릭시 class명 => active
+    
+            for(let i=0; i<elEx2_li.length; i++){
+                elEx2_li[i].addEventListener('click',function(){
+                console.log(i)
+                //    elEx2_li[0].classList.remove('active');
+                //    elEx2_li[1].classList.remove('active');
+                //    elEx2_li[2].classList.remove('active');
+                elEx2_li[i].classList.toggle('active');
+    
+                // classList - >add(),remove(),toggle()
+                });
+            }
+        </script>
 
     </main>
 

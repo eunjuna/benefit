@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <article class="board">
+        <ul>
+            <li>
+                <p>
+                    신상품 새소식은 어디서 확인 가능한가요?
+                    <span class="btn">
+                        <img src="./img/btn02.png">
+                    </span>
+                </p>
+
+                <div>베네피트 자사몰 홈페이지나 SNS(페이스북, 인스타그램, 트위터, 유튜브, 카카오톡 알림)에서 확인 가능합니다.</div>
+            </li>
+            <li>
+                <p>
+                    제품의 전성분을 알고싶어요.
+                    <span class="btn"><img src="./img/btn02.png"></span>
+                </p>
+                <div>성분 목록은 변경될 수 있으므로 최신 정보는 제품 포장을 참고하시거나 고객상담실 (1234-5678)로 문의 부탁드립니다.</div>
+            </li>
+            <li>
+                <p>
+                    단종된 상품의 재출시 예정 여부에 대해 알고싶어요.
+                    <span class="btn"><img src="./img/btn02.png"></span>
+                </p>
+                <div>안타깝게도 현재 단종 상품의 경우 재출시 예정일정이 없습니다.</div>
+            </li>
+        </ul>
+    </article>
+
+    <style>
+        .board{width: 80%; margin: 200px auto;}
+        .board ul{
+            list-style: none;
+            padding: 0;
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            font-size: 22px;
+        }
+        .board ul li{padding: 20px 0;}
+        .board ul li p{margin: 0; padding: 10px; font-weight: bold;}
+        .board ul li p span{float: right;}
+        .board ul li div{background: #FEC6D7; padding: 30px; display: none;}
+
+        .board ul li.active div{display: block;}
+    </style>
+
+    <script>
+
+        const elEx2_li = document.querySelectorAll('.board ul li');
+        // li클릭시 class명 => active
+
+        for(let i=0; i<elEx2_li.length; i++){
+            elEx2_li[i].addEventListener('click',function(){
+            console.log(i)
+            //    elEx2_li[0].classList.remove('active');
+            //    elEx2_li[1].classList.remove('active');
+            //    elEx2_li[2].classList.remove('active');
+            elEx2_li[i].classList.toggle('active');
+
+            // classList - >add(),remove(),toggle()
+            });
+        }
+    </script>
+
+    <!-- function mouseDown(obj) { // 마우스 포인터가 요소안으로 들어올 때 (마우스 클릭시)
+    obj.src = "./img/btn01.png";
+    }
+    function mouseUp(obj) { // 마우스 버튼을 올릴 때(클릭한 걸 뗄 때)
+    obj.src = "./img/btn02.png";
+    } -->
+    
+</body>
+</html>
