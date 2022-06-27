@@ -7,6 +7,9 @@
     font-family: 'Noto Sans KR', sans-serif;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
 
 /*==================== header ====================*/
 header{
@@ -105,23 +108,20 @@ header nav a:hover{
 
 
 /* 게시판 */
-.board {
-    width: 80%;
-    border-collapse: collapse;
-    margin: 20px auto;
-}
-.board td {
+.board{width: 80%; margin: 30px auto;}
+.board ul{
+    list-style: none;
+    padding: 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
     font-size: 22px;
-    padding: 20px;
-    text-align: left;
 }
-.board td:nth-of-type(2) {
-    text-align: left;
-    font-weight: bold;
-}
-.board tbody tr:nth-of-type(even){
-    background: #FEC6D7;
-}
+.board ul li{padding: 20px 0;}
+.board ul li p{margin: 0; padding: 10px; font-weight: bold;}
+.board ul li p span{float: right;}
+.board ul li div{background: #FEC6D7; padding: 30px; display: none;}
+
+.board ul li.active div{display: block;}
 
 
 /*==================== footer ====================*/

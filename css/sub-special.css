@@ -7,6 +7,10 @@
     font-family: 'Noto Sans KR', sans-serif;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 /*==================== header ====================*/
 header{
     position: fixed;
@@ -65,13 +69,22 @@ main aside a:nth-child(1)::after{
 
 
 .txt01{
+    font-size: 80px;
+    font-weight: bold;
+    color: #fff;
     position: absolute;
     top: 10%;
+
+    animation: moveLeft duration timing 6s linear infinite;
 }
 
 .txt02{
     position: absolute;
     bottom: 10%;
+}
+
+@keyframes moveLeft {
+    100%{transform:translateX(-2950px)}
 }
 
 
